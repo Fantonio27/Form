@@ -9,6 +9,7 @@ export default function InputForm ({name} : InputForm) {
         <div className="flex flex-col space-y-1.5">
             <Label htmlFor="name">Name</Label>
             <Input id="name" placeholder="Name of your project" />
+            cacsac
         </div>
     )
 }
