@@ -4,7 +4,7 @@ import UnControlledInput from './components/UnControlled/input';
 import Memo from './components/Memo';
 import UseMemo from './components/useMemo';
 import UsingCallback from './components/Callback';
-import React, { useState } from 'react';
+import React from 'react';
 
 const components = {
   controlled : ControlledInput,
@@ -16,22 +16,27 @@ const components = {
 
 
 function App() {
-  const [item, setItem] = useState<string>("controlled");
 
+  const params = window.location.href;
+  const lastURL = params.substring(params.lastIndexOf("/") + 1);
+  // console.log("APP")
+  
   return (
     <>
       <nav>
         <ul className='flex gap-10 cursor-pointer [&_li:hover]:text-sky-500 mb-10'>
           {
             Object.keys(components).map((component, index) => {
-              return <li key={index} onClick={()=> setItem(component)}>{component}</li>
+              return <a key={index}href={component}><li>{component}</li></a>
             })
           }
         </ul>
       </nav>
-      {React.createElement(components[item as keyof typeof components])}
+      {React.createElement(components[lastURL as keyof typeof components])}
     </>
   );
 }
 
 export default App;
+
+{/* <li key={index} onClick={()=> setItem(component)}>{component}</li> */}
