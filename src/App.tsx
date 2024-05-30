@@ -4,6 +4,9 @@ import UnControlledInput from './components/UnControlled/input';
 import Memo from './components/Memo';
 import UseMemo from './components/useMemo';
 import UsingCallback from './components/Callback';
+import UseRef from './components/useRef/ref';
+import UseReducer from './components/useReducer/reducer';
+
 import React from 'react';
 
 const components = {
@@ -11,7 +14,9 @@ const components = {
   uncontrolled: UnControlledInput,
   memo: Memo,
   usememo: UseMemo,
-  callback: UsingCallback
+  callback: UsingCallback,
+  reducer: UseReducer,
+  ref: UseRef
 }
 
 
@@ -20,7 +25,7 @@ function App() {
   const params = window.location.href;
   const lastURL = params.substring(params.lastIndexOf("/") + 1);
   
-  
+
   return (
     <>
       <nav>
