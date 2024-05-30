@@ -19,7 +19,7 @@ function App() {
 
   const params = window.location.href;
   const lastURL = params.substring(params.lastIndexOf("/") + 1);
-  // console.log("APP")
+  
   
   return (
     <>
