@@ -1,7 +1,7 @@
 function UnControlledInput() {
   return (
     <div className="flex justify-center items-center mt-28">
-      <form className="border border-slate-300 rounded-xl p-10">
+      <form className="border border-slate-300 rounded-xl p-10" >
         <h1 className=" font-bold text-2xl mb-10">Uncontrolled Input (without using usestate/useref)</h1>
         <div className="grid grid-cols-2 gap-y-5">
           <>
