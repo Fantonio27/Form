@@ -6,7 +6,7 @@ import UseMemo from './components/useMemo';
 import UsingCallback from './components/Callback';
 import UseRef from './components/useRef/ref';
 import UseReducer from './components/useReducer/reducer';
-
+import RefUncontrolled from '@/components/UnControlledRef/input'
 import React from 'react';
 
 const components = {
@@ -16,7 +16,8 @@ const components = {
   usememo: UseMemo,
   callback: UsingCallback,
   reducer: UseReducer,
-  ref: UseRef
+  ref: UseRef,
+  RefUncontrolled: RefUncontrolled
 }
 
 
