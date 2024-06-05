@@ -9,6 +9,8 @@ import UseReducer from './components/useReducer/reducer';
 import RefUncontrolled from '@/components/UnControlledRef/input'
 import React, { useState } from 'react';
 import { ThemeContext } from './lib/context.ts'
+import ServerComponent from './components/serverSideRendering/serverComponent.tsx';
+import Testing from "@/components/testingComponent/component.tsx"
 
 const components = {
   controlled : ControlledInput,
@@ -18,7 +20,9 @@ const components = {
   callback: UsingCallback,
   reducer: UseReducer,
   ref: UseRef,
-  RefUncontrolled: RefUncontrolled
+  refUncontrolled: RefUncontrolled,
+  serverComponent : ServerComponent,
+  testing: Testing
 }
 
 
@@ -47,5 +51,3 @@ function App() {
 }
 
 export default App;
-
-{/* <li key={index} onClick={()=> setItem(component)}>{component}</li> */}
