@@ -11,6 +11,7 @@ import React, { useState } from 'react';
 import { ThemeContext } from './lib/context.ts'
 import ServerComponent from './components/serverSideRendering/serverComponent.tsx';
 import Testing from "@/components/testingComponent/component.tsx"
+import CompoundComponent from './components/Compound/page.tsx';
 
 const components = {
   controlled : ControlledInput,
@@ -22,7 +23,8 @@ const components = {
   ref: UseRef,
   refUncontrolled: RefUncontrolled,
   serverComponent : ServerComponent,
-  testing: Testing
+  testing: Testing,
+  compound: CompoundComponent,
 }
 
 
