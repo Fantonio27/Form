@@ -11,10 +11,15 @@ type Action = {
 }
 
 const CounterStore = create<State & Action>((set)=> ({
-    count: 0,
+    // Initial Value
+    count: 0,   
+
+    // Actions
     add : () => set((state) => ({count: state.count + 1})),
     negative: () => set((state) => ({count: state.count - 1})),
     number: (qty) => set(()=> ({count : qty}))
 }))
 
+
+//Export
 export { CounterStore }
