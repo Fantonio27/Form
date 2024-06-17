@@ -12,6 +12,7 @@ import { ThemeContext } from './lib/context.ts'
 import ServerComponent from './components/serverSideRendering/serverComponent.tsx';
 import Testing from "@/components/testingComponent/component.tsx"
 import CompoundComponent from './components/Compound/page.tsx';
+import Zustand from './components/zustand/form.tsx';
 
 const components = {
   controlled : ControlledInput,
@@ -25,6 +26,7 @@ const components = {
   serverComponent : ServerComponent,
   testing: Testing,
   compound: CompoundComponent,
+  ZustandForm : Zustand,
 }
 
 
